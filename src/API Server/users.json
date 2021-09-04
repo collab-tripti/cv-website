@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "phoneNumber": "+917409328856",
+      "studName": "Tripti Gupta",
+      "dob": "22-11-1997",
+      "email": "triptiguptaagra1234@gmail.com",
+      "city": "37/46-H Bundu Katra, gwalior road",
+      "socialMediaProfile": [
+        {
+          "socialSite": "LinkedIN",
+          "link": "www.linkedin.com/in/tripti-gupta-384b16147"
+        },
+        {
+          "socialSite": "Github",
+          "link": "https://github.com/collab-tripti/"
+        }
+      ],
+      "experience": [
+        {
+          "companyName": "Infosys",
+          "designation": "system engineer",
+          "expStartMonth": "Jul",
+          "expStartYear": "2015",
+          "expEndMonth": "May",
+          "expEndYear": "2016"
+        },
+        {
+          "companyName": "Indiamart Limited",
+          "designation": "Associate software engineer",
+          "expStartMonth": "Apr",
+          "expStartYear": "2014",
+          "expEndMonth": "May",
+          "expEndYear": "2016"
+        }
+      ],
+      "education": [
+        {
+          "instituteName": "Ajay kumar garg engineering college",
+          "degreeName": "btech",
+          "degreeStartMonth": "Feb",
+          "degreeStartYear": "2014",
+          "degreeEndMonth": "Feb",
+          "degreeEndYear": "2017"
+        },
+        {
+          "instituteName": "Dayanand Bal Mandir sr. sec school",
+          "degreeName": "PCM ",
+          "degreeStartMonth": "Apr",
+          "degreeStartYear": "2016",
+          "degreeEndMonth": "May",
+          "degreeEndYear": "2016"
+        }
+      ]
+    }
+  ]
+}
