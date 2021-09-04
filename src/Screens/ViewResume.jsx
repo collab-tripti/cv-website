@@ -18,7 +18,7 @@ class ViewResume extends Component{
                         <div className="d-flex mb-3">
                                 
                                 <label className="" htmlFor="degreeStartDate">Duration:&nbsp;&nbsp;</label>    
-                                {edu.degreeStartMonth},{edu.degreeStartYear}&nbsp;-&nbsp;{edu.degreeEndMonth},{edu.degreeEndYear}     
+                                {edu.degreeStartMonth&&<div>{edu.degreeStartMonth},{edu.degreeStartYear}&nbsp;-&nbsp;{edu.degreeEndMonth},{edu.degreeEndYear}</div>}     
                         </div>
         </>
         )
@@ -37,7 +37,7 @@ class ViewResume extends Component{
                 </div> 
                 <div>    
                     <label htmlFor="jobStartDate">Duration:&nbsp;&nbsp;</label> 
-                    {exp.expStartMonth},{exp.expStartYear}&nbsp;-&nbsp;{exp.expEndMonth},{exp.expEndYear}  
+                    {exp.expStartMonth  && <div>{exp.expStartMonth},{exp.expStartYear}&nbsp;-&nbsp;{exp.expEndMonth},{exp.expEndYear}  </div>}
                 </div>
             </>
     }
@@ -46,7 +46,7 @@ class ViewResume extends Component{
         return <>
             <div>    
                            
-                            {social.socialSite}&nbsp;-&nbsp;&nbsp;{social.link}    
+                            {social.socialSite && <div>{social.socialSite}&nbsp;-&nbsp;&nbsp;{social.link}</div> }
                         </div>
         </>
     };
@@ -58,9 +58,9 @@ class ViewResume extends Component{
 
        return (
                 <div className="formDiv col-lg-6 fs-5">    
-                <h2 className="d-flex justify-content-around" >Your Resume</h2>
+                <h2 className="d-flex justify-content-around mb-5" >Your Resume</h2>
                 <div> 
-                    <p className="fs-4 mb-0">Personal Information</p> 
+                    <strong className="fs-4 mb-0">Personal Information</strong> 
                         <div className="d-flex col-lg-12">
                             <label htmlFor="studName">Name:&nbsp;&nbsp;</label> 
                                 {user.studName}   
@@ -88,7 +88,7 @@ class ViewResume extends Component{
                             {user.city}        
                         </div>  
                         <div className="d-flex col-lg-12 justify-content-between"> 
-                            <div className="d-flex flex-column col-lg-4"><p className="d-block fs-4 mb-0">Education</p> 
+                            <div className="d-flex flex-column col-lg-4"><strong className="d-block fs-4 mb-0">Education</strong> 
                             {
                                 user.education.map((edu, id) => {
                                     return this.educationField(edu,id)
@@ -96,14 +96,14 @@ class ViewResume extends Component{
                                 )
                             }</div>
 
-                            <div className="d-flex flex-column col-lg-6"><p className="d-block fs-4 mb-0">Work Experience</p> 
+                            <div className="d-flex flex-column col-lg-6"><strong className="d-block fs-4 mb-0">Work Experience</strong> 
                             {
                                 user.experience.map((edu, id) => {
                                     return this.experienceField(edu,id);
                                 })
                             }</div>
                         </div>
-                        <p className="fs-4 mb-0">Social Profile</p> 
+                        <strong className="fs-4 mb-0">Social Profile</strong> 
                         {
                             user.socialMediaProfile.map((media, id)=> {
                                 return this.socialMediaField(media,id);

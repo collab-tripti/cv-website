@@ -4,79 +4,7 @@ class Editor extends Component {
     constructor(props) {    
         super(props);
         this.state = {
-                        error:{
-                            studName:'',
-                            email:'',
-                            dob:'',
-                            city:'',
-                            education:[
-                                {
-                                    instituteName:'' ,
-                                    degreeName:'' ,
-                                    degreeStartMonth:'',
-                                    degreeStartYear:'',
-                                    degreeEndMonth:'',
-                                    degreeEndYear:''
-                                },
-                                {
-                                    instituteName:'' ,
-                                    degreeName:'' ,
-                                    degreeStartMonth:'',
-                                    degreeStartYear:'',
-                                    degreeEndMonth:'',
-                                    degreeEndYear:''
-                                },
-                                {
-                                    instituteName:'' ,
-                                    degreeName:'' ,
-                                    degreeStartMonth:'',
-                                    degreeStartYear:'',
-                                    degreeEndMonth:'',
-                                    degreeEndYear:''
-                                }
-                            ],
-                            experience:[
-                                {
-                                    companyName:'',
-                                    designation:'',
-                                    expStartMonth:'',
-                                    expStartYear:'',
-                                    expEndMonth:'',
-                                    expEndYear:''
-                                },
-                                {
-                                    companyName:'',
-                                    designation:'',
-                                    expStartMonth:'',
-                                    expStartYear:'',
-                                    expEndMonth:'',
-                                    expEndYear:''
-                                },
-                                {
-                                    companyName:'',
-                                    designation:'',
-                                    expStartMonth:'',
-                                    expStartYear:'',
-                                    expEndMonth:'',
-                                    expEndYear:''
-                                }
-                            ],
-                            socialMediaProfile:[
-                                {
-                                    socialSite:'',
-                                    link:''
-                                },
-                                {
-                                    socialSite:'',
-                                    link:''
-                                },
-                                {
-                                    socialSite:'',
-                                    link:''
-                                }
-                            ]
-
-                        }
+                        error:this.errorField
                     }
     }
     
@@ -159,6 +87,80 @@ class Editor extends Component {
     emptysocialMediaProfile ={
         socialSite:'',
         link:''
+    }
+
+    errorField = {
+        studName:'',
+        email:'',
+        dob:'',
+        city:'',
+        education:[
+        {
+            instituteName:'' ,
+            degreeName:'' ,
+            degreeStartMonth:'',
+            degreeStartYear:'',
+            degreeEndMonth:'',
+            degreeEndYear:''
+        },
+        {
+            instituteName:'' ,
+            degreeName:'' ,
+            degreeStartMonth:'',
+            degreeStartYear:'',
+            degreeEndMonth:'',
+            degreeEndYear:''
+        },
+        {
+            instituteName:'' ,
+            degreeName:'' ,
+            degreeStartMonth:'',
+            degreeStartYear:'',
+            degreeEndMonth:'',
+            degreeEndYear:''
+        }
+    ],
+    experience:[
+        {
+            companyName:'',
+            designation:'',
+            expStartMonth:'',
+            expStartYear:'',
+            expEndMonth:'',
+            expEndYear:''
+        },
+        {
+            companyName:'',
+            designation:'',
+            expStartMonth:'',
+            expStartYear:'',
+            expEndMonth:'',
+            expEndYear:''
+        },
+        {
+            companyName:'',
+            designation:'',
+            expStartMonth:'',
+            expStartYear:'',
+            expEndMonth:'',
+            expEndYear:''
+        }
+        ],
+        socialMediaProfile:[
+            {
+                socialSite:'',
+                link:''
+            },
+            {
+                socialSite:'',
+                link:''
+            },
+            {
+                socialSite:'',
+                link:''
+            }
+        ]
+
     }
 
     educationField = (id) => {
@@ -467,6 +469,7 @@ class Editor extends Component {
     };
 
     saveUser = async() => {
+        this.setState({error: this.errorField})
         if(this.handleFormValidation()){
             await fetch("http://localhost:8000/users/"+this.props.user.id, {method: 'PUT', headers: {
                 'Content-Type': 'application/json'

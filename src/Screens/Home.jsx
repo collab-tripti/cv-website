@@ -2,7 +2,7 @@ import React, {Component, version} from "react";
 // import Editor from "../Screens/Editor";
 import ViewResume from "./ViewResume";
 import Editor from "../component/Editor";
-// import { Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import axios from "axios";
 
 class Home extends Component{

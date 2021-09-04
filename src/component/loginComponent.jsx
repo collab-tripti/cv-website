@@ -47,27 +47,17 @@ class LoginComponent extends Component {
 
   login = async() => {
 	this.setState({error:false, message:""})
-    if(this.validatePhoneNumber() && !this.isAlreadyInDB(this.state.phoneNumber)){
-		document.cookie="phoneNumber ="+this.state.phoneNumber;
-		axios.post("http://localhost:8000/users", 
-			{...this.emptyUser, phoneNumber: this.state.phoneNumber},
-			{headers:{"content-type":"application/json"}}
-			)
-		.then(res=>{
-			this.props.pushToHome();
-		})
-		.catch(error=> {
-			this.setState({error:true, message:"Something went wrong"})
-		})
+    if(this.validatePhoneNumber()){
+		this.isAlreadyInDB(this.state.phoneNumber);
 	}
 }
 
   validatePhoneNumber=()=>{
-    if(!this.state.phoneNumber.length===10 || !Number(this.state.phoneNumber)){
-      this.setState({error: true, message:"Invalid Phone Number"})
-      return false;
+    if(this.state.phoneNumber.length===10 && Number(this.state.phoneNumber)){
+      return true;
     }
-    return true;
+	this.setState({error: true, message:"Invalid Phone Number"})
+    return false;
   }
 
     componentDidMount(){
@@ -83,11 +73,24 @@ class LoginComponent extends Component {
 	isAlreadyInDB= async(phoneNumber) => {
 		await axios.get("http://localhost:8000/users?phoneNumber="+phoneNumber)
 		.then(res=>{
+			console.log(res)
 			if(res.data.length === 1){
 				document.cookie="phoneNumber ="+phoneNumber;
 				this.props.pushToHome();	
-			}
-		})
+			}else{
+				document.cookie="phoneNumber ="+this.state.phoneNumber;
+				axios.post("http://localhost:8000/users", 
+					{...this.emptyUser, phoneNumber: this.state.phoneNumber},
+					{headers:{"content-type":"application/json"}}
+					)
+				.then(res=>{
+					this.props.pushToHome();
+				})
+				.catch(error=> {
+					this.setState({error:true, message:"Something went wrong"})
+				})
+					}
+				})
 		.catch(error=> {
 			this.setState({error:true, message:"Something went wrong", phoneNumber:""})
 			return false
