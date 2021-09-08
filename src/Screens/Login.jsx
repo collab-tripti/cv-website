@@ -150,7 +150,7 @@ class Login extends Component {
                   </span>
                 </div>
               </div>
-              <div class="lgnbx">
+              <div >
                 <>
                   <LoginComponent pushToHome={this.pushToHome} />
                 </>
