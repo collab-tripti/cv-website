@@ -35,12 +35,12 @@ class Login extends Component {
                           width: "2.2rem",
                           height: "auto",
                           fill: "none",
-                          // stroke: "currentColor",
-                          // "stroke-linecap": "round",
-                          // "stroke-linejoin": "round",
-                          // "stroke-width": ".1rem",
-                          // transition:
-                          // "stroke .25s cubic-bezier(.45,.05,.55,.95) 0ms",
+                          stroke: "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": ".1rem",
+                          transition:
+                          "stroke .25s cubic-bezier(.45,.05,.55,.95) 0ms",
                         }}
                       >
                         <defs></defs>
@@ -74,12 +74,12 @@ class Login extends Component {
                           width: "2.2rem",
                           height: "auto",
                           fill: "none",
-                          // stroke: "currentColor",
-                          // "stroke-linecap": "round",
-                          // "stroke-linejoin": "round",
-                          // "stroke-width": ".1rem",
-                          // transition:
-                          //   "stroke .25s cubic-bezier(.45,.05,.55,.95) 0ms",
+                          stroke: "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": ".1rem",
+                          transition:
+                            "stroke .25s cubic-bezier(.45,.05,.55,.95) 0ms",
                         }}
                       >
                         <defs></defs>
@@ -122,12 +122,12 @@ class Login extends Component {
                           width: "2.2rem",
                           height: "auto",
                           fill: "none",
-                          // stroke: "currentColor",
-                          // "stroke-linecap": "round",
-                          // "stroke-linejoin": "round",
-                          // "stroke-width": ".1rem",
-                          // transition:
-                          //   "stroke .25s cubic-bezier(.45,.05,.55,.95) 0ms",
+                          stroke: "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": ".1rem",
+                          transition:
+                            "stroke .25s cubic-bezier(.45,.05,.55,.95) 0ms",
                         }}
                       >
                         <defs></defs>
@@ -150,7 +150,7 @@ class Login extends Component {
                   </span>
                 </div>
               </div>
-              <div >
+              <div class="lgnbx">
                 <>
                   <LoginComponent pushToHome={this.pushToHome} />
                 </>

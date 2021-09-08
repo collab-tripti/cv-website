@@ -47,13 +47,13 @@ class LoginComponent extends Component {
 
   login = async() => {
 	this.setState({error:false, message:""})
-    if(this.validatePhoneNumber()){
+    if(this.validatePhoneNumber(this.state.phoneNumber)){
 		this.isAlreadyInDB(this.state.phoneNumber);
 	}
 }
 
-  validatePhoneNumber=()=>{
-    if(this.state.phoneNumber.length===10 && Number(this.state.phoneNumber)){
+  validatePhoneNumber=(phoneNumber)=>{
+    if(phoneNumber.length===10 && Number(phoneNumber)){
       return true;
     }
 	this.setState({error: true, message:"Invalid Phone Number"})
@@ -71,6 +71,9 @@ class LoginComponent extends Component {
     }
 
 	isAlreadyInDB= async(phoneNumber) => {
+		if(!this.validatePhoneNumber(phoneNumber)){
+			return;
+		}
 		await axios.get("http://localhost:8000/users?phoneNumber="+phoneNumber)
 		.then(res=>{
 			console.log(res)
@@ -102,7 +105,7 @@ class LoginComponent extends Component {
   render() {
     return (
         <>
-      <div class="lgnbx">
+      <div >
           <h1 style={{ "font-size": "22px", margin: "30px auto" }}>
             Design a winning CV with us
           </h1>

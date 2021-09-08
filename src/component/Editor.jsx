@@ -14,7 +14,8 @@ class Editor extends Component {
         temp.email = this.props.user.email !== "" ? "" : "This field is required";
         temp.dob = this.props.user.dob !== "" ? "" : "This field is required";
         temp.city = this.props.user.city !== "" ? "" : "This field is required";
-        temp.phoneNumber = this.props.user.phoneNumber !== "" ? "" : "This field is required";
+        temp.aboutme = this.props.user.aboutme !== "" ? "" : "This field is required";
+        temp.phoneNumber = (this.props.user.phoneNumber.length === 10 && Number(this.props.user.phoneNumber))? "" : "This field is invalid";
         var educationArray = [];
         this.props.user.education.map((edu) => {
             var newTemp = {}
@@ -91,6 +92,8 @@ class Editor extends Component {
 
     errorField = {
         studName:'',
+        phoneNumber:'',
+        aboutme:'',
         email:'',
         dob:'',
         city:'',
@@ -550,7 +553,17 @@ class Editor extends Component {
         
                             </div>
                         </div>
-                         
+                        <div>    
+                            <label htmlFor="aboutme">About Me</label>    
+                                <input type="text" name="aboutme"    
+                                    value={this.props.user.aboutme}    
+                                    onChange={this.handleChange}    
+                                    placeholder="Tell about yourself..."    
+                                />      
+                            {this.state.error.aboutme &&    
+                                <div style={{ color: "red", paddingBottom: 10 }}>{this.state.error.aboutme}</div>    
+                            }    
+                        </div> 
                         <div>    
                             <label htmlFor="city">Address</label>    
                                 <input type="text" name="city"    

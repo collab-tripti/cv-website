@@ -98,8 +98,9 @@ body {background-color: #fffbf2;font-family: Arial, 'Helvetica Neue', Helvetica,
     .job h4 { position: absolute;top: 0.35em;right: 0;}
     
     .clrw{color:#f3d0b0}	.mt20{margin-top:30px}
-    .lftsde{background:#df7c1f;width:35%;padding:10px}
-    .rgtsde{background:#eceaed;width:65%;padding:10px}
+    .lftsde{background:#df7c1f;padding:10px}
+    .rgtsde{background:#eceaed;padding:10px}
     svg{margin-right: 10px; position: relative;top: 3px;}
     .userpic{width:140px;height:140px;border-radius:50%;background:#eceaed;margin: 10px auto;}
     .fldvalue a{text-decoration:underline;color:#f3d0b0}
+    .viewResume{ max-width: 800px; margin: 0 auto;}

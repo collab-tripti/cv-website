@@ -6,7 +6,7 @@
       "studName": "Tripti Gupta",
       "dob": "22-11-1997",
       "email": "triptiguptaagra1234@gmail.com",
-      "city": "ajay kumar garg engineering college (girls hostel 2),",
+      "city": "ajay kumar garg engineering college (girls hostel 2)",
       "socialMediaProfile": [
         {
           "socialSite": "LinkedIN",
@@ -25,6 +25,14 @@
           "expStartYear": "2014",
           "expEndMonth": "Apr",
           "expEndYear": "2017"
+        },
+        {
+          "companyName": "Infosys",
+          "designation": "system engineer",
+          "expStartMonth": "Jun",
+          "expStartYear": "2017",
+          "expEndMonth": "May",
+          "expEndYear": "2019"
         }
       ],
       "education": [
@@ -35,8 +43,17 @@
           "degreeStartYear": "2016",
           "degreeEndMonth": "Jun",
           "degreeEndYear": "2018"
+        },
+        {
+          "instituteName": "akgec",
+          "degreeName": "btech",
+          "degreeStartMonth": "May",
+          "degreeStartYear": "2013",
+          "degreeEndMonth": "Jun",
+          "degreeEndYear": "2016"
         }
-      ]
+      ],
+      "aboutme": "Associate Software Engineer "
     },
     {
       "studName": "",
