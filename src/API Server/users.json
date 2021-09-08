@@ -3,34 +3,38 @@
     {
       "id": 1,
       "phoneNumber": "7409328856",
-      "studName": "",
-      "dob": "",
-      "email": "",
-      "city": "",
+      "studName": "Tripti Gupta",
+      "dob": "22-11-1997",
+      "email": "triptiguptaagra1234@gmail.com",
+      "city": "ajay kumar garg engineering college (girls hostel 2),",
       "socialMediaProfile": [
         {
-          "socialSite": "",
-          "link": ""
+          "socialSite": "LinkedIN",
+          "link": "www.linkedin.com/in/tripti-gupta-384b16147"
+        },
+        {
+          "socialSite": "Github",
+          "link": "sxacdsdcjsocjodsicod"
         }
       ],
       "experience": [
         {
-          "companyName": "",
-          "designation": "",
-          "expStartMonth": "",
-          "expStartYear": "",
-          "expEndMonth": "",
-          "expEndYear": ""
+          "companyName": "Indiamart Limited",
+          "designation": "associate software engineer",
+          "expStartMonth": "May",
+          "expStartYear": "2014",
+          "expEndMonth": "Apr",
+          "expEndYear": "2017"
         }
       ],
       "education": [
         {
-          "instituteName": "",
-          "degreeName": "",
-          "degreeStartMonth": "",
-          "degreeStartYear": "",
-          "degreeEndMonth": "",
-          "degreeEndYear": ""
+          "instituteName": "Ajay kumar garg engineering college",
+          "degreeName": "btech",
+          "degreeStartMonth": "Oct",
+          "degreeStartYear": "2016",
+          "degreeEndMonth": "Jun",
+          "degreeEndYear": "2018"
         }
       ]
     },
