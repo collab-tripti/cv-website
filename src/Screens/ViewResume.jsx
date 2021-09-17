@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import pic from "../assets/pic.png";
-
+import { useparam } from 'react-router-dom';
 class ViewResume extends Component {
   constructor(props) {
     super(props);
+
   }
 
   educationField = (edu, id) => {
@@ -77,7 +78,7 @@ class ViewResume extends Component {
 
     return (
       <div className="viewResume">
-        {/* <h2 className="d-flex justify-content-around mb-5">Your Resume</h2> */}
+        <h2 className="d-flex justify-content-around mb-4">Your Resume</h2>
         <div className="d-flex">
           <div class="lftsde col-lg-5">
             <div class="userpic">

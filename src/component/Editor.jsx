@@ -40,7 +40,7 @@ class Editor extends Component {
             experienceArray.push(newTemp);
         })
         var socialArray = []
-        this.props.user.socialMediaProfile.map((social) => {
+        this.props.user.socialMediaProfile.forEach((social) => {
             var newTemp = {}
             newTemp.socialSite =  social.socialSite !== "" ? "" : "This field is required";
             newTemp.link =  social.link !== "" ? "" : "This field is required";
@@ -480,7 +480,7 @@ class Editor extends Component {
               }, body: JSON.stringify(this.props.user)})
               .then(res=>res.json())
             .then(data=>{
-                this.props.pushToView(this.props.user);
+                this.props.pushToView(this.props.user.phoneNumber);
             })
         } 
         
@@ -492,7 +492,6 @@ class Editor extends Component {
     }
 
     render() {    
-    
         return (    
             <div className="formDiv col-lg-6">    
                 <h3 style={{ textAlign: "center" }} >CV Details Form </ h3>    

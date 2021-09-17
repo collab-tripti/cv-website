@@ -87,8 +87,8 @@ class Home extends Component{
         this.props.history.push("/")
     }
         
-    pushToView = (user) => {
-        this.props.history.push("/ViewResume", {user:user})
+    pushToView = (phoneNumber) => {
+        this.props.history.push("/FinalResume/"+phoneNumber)
     }
 
     render(){

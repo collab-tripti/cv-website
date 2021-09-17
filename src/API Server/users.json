@@ -6,7 +6,7 @@
       "studName": "Tripti Gupta",
       "dob": "22-11-1997",
       "email": "triptiguptaagra1234@gmail.com",
-      "city": "ajay kumar garg engineering college (girls hostel 2)",
+      "city": "ajay kumar garg engineering college (girls hostel 2),",
       "socialMediaProfile": [
         {
           "socialSite": "LinkedIN",
@@ -15,6 +15,10 @@
         {
           "socialSite": "Github",
           "link": "sxacdsdcjsocjodsicod"
+        },
+        {
+          "socialSite": "Instagram",
+          "link": "cvbn"
         }
       ],
       "experience": [
@@ -37,7 +41,7 @@
       ],
       "education": [
         {
-          "instituteName": "Ajay kumar garg engineering college",
+          "instituteName": "Ajay Kumar Garg Engineering College",
           "degreeName": "btech",
           "degreeStartMonth": "Oct",
           "degreeStartYear": "2016",
@@ -55,6 +59,115 @@
       ],
       "aboutme": "Associate Software Engineer "
     },
+    {
+      "studName": "Pooja gupta",
+      "dob": "22/11/1997",
+      "email": "tripti1610083@gmail.com",
+      "city": "37/46-H Bundu Katra, gwalior road, agra",
+      "socialMediaProfile": [
+        {
+          "socialSite": "LinkedIN",
+          "link": "www.linkedin.com/in/pooja-gupta-384b16147"
+        },
+        {
+          "socialSite": "Youtube",
+          "link": "https://www.youtube.com/channel/UCJWPz2-4M_LoPgzu7blWXmQ"
+        }
+      ],
+      "experience": [
+        {
+          "companyName": "Infosys",
+          "designation": "system engineer",
+          "expStartMonth": "Aug",
+          "expStartYear": "2017",
+          "expEndMonth": "Jul",
+          "expEndYear": "2019"
+        }
+      ],
+      "education": [
+        {
+          "instituteName": "akgec",
+          "degreeName": "btech",
+          "degreeStartMonth": "Feb",
+          "degreeStartYear": "2013",
+          "degreeEndMonth": "Apr",
+          "degreeEndYear": "2016"
+        }
+      ],
+      "phoneNumber": "1234567890",
+      "id": 2,
+      "aboutme": "I am passionate about my work"
+    },
+    {
+      "studName": "hjbj",
+      "dob": "dcc",
+      "email": "csdcs",
+      "city": "dscsdc",
+      "socialMediaProfile": [
+        {
+          "socialSite": "Github",
+          "link": "cvbn"
+        }
+      ],
+      "experience": [
+        {
+          "companyName": "dscs",
+          "designation": "svdcd",
+          "expStartMonth": "May",
+          "expStartYear": "2020",
+          "expEndMonth": "May",
+          "expEndYear": "2017"
+        },
+        {
+          "companyName": "sdccsdcds",
+          "designation": "dfbsdvs",
+          "expStartMonth": "Mar",
+          "expStartYear": "2015",
+          "expEndMonth": "May",
+          "expEndYear": "2017"
+        }
+      ],
+      "education": [
+        {
+          "instituteName": "cscdc",
+          "degreeName": "scsdcsc",
+          "degreeStartMonth": "May",
+          "degreeStartYear": "2017",
+          "degreeEndMonth": "May",
+          "degreeEndYear": "2016"
+        },
+        {
+          "instituteName": "sdcaca",
+          "degreeName": "acscddsc",
+          "degreeStartMonth": "Mar",
+          "degreeStartYear": "2014",
+          "degreeEndMonth": "May",
+          "degreeEndYear": "2018"
+        },
+        {
+          "instituteName": "sdcaca",
+          "degreeName": "acscddsc",
+          "degreeStartMonth": "Mar",
+          "degreeStartYear": "2014",
+          "degreeEndMonth": "May",
+          "degreeEndYear": "2018"
+        }
+      ],
+      "phoneNumber": "7416215661",
+      "id": 3,
+      "aboutme": "sdcdsc"
+    },
+    {
+      "studName": "",
+      "dob": "",
+      "email": "",
+      "city": "",
+      "socialMediaProfile": [
+        {
+          "socialSite": "",
+          "link": ""
+        }
+      ],
     {
       "studName": "",
       "dob": "",
@@ -86,8 +199,8 @@
           "degreeEndYear": ""
         }
       ],
-      "phoneNumber": "1234567890",
-      "id": 2
+      "phoneNumber": "7485132689",
+      "id": 4
     }
   ]
 }
