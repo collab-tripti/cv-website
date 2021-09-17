@@ -1,5 +1,5 @@
 import React, { Component } from "react";    
-    
+import { useCookies } from 'react-cookie';
 class Editor extends Component {    
     constructor(props) {    
         super(props);
@@ -487,7 +487,8 @@ class Editor extends Component {
     }
 
     logout = () => {
-        document.cookie = "phoneNumber = ";
+        document.cookie = "phoneNumber=";
+        // useCookies.cookies.remove('phoneNumber=');
         this.props.pushToLogin();
     }
 

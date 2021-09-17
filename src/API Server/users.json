@@ -168,6 +168,29 @@
           "link": ""
         }
       ],
+      "experience": [
+        {
+          "companyName": "",
+          "designation": "",
+          "expStartMonth": "",
+          "expStartYear": "",
+          "expEndMonth": "",
+          "expEndYear": ""
+        }
+      ],
+      "education": [
+        {
+          "instituteName": "",
+          "degreeName": "",
+          "degreeStartMonth": "",
+          "degreeStartYear": "",
+          "degreeEndMonth": "",
+          "degreeEndYear": ""
+        }
+      ],
+      "phoneNumber": "",
+      "id": 4
+    },
     {
       "studName": "",
       "dob": "",
@@ -200,7 +223,7 @@
         }
       ],
       "phoneNumber": "7485132689",
-      "id": 4
+      "id": 5
     }
   ]
 }

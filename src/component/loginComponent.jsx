@@ -56,11 +56,16 @@ class LoginComponent extends Component {
     if(phoneNumber.length===10 && Number(phoneNumber)){
       return true;
     }
+	if(phoneNumber.length === 0){
+		this.setState({error:false, message:""});
+		return false;
+	}
 	this.setState({error: true, message:"Invalid Phone Number"})
     return false;
   }
 
-    componentDidMount(){
+    UNSAFE_componentWillMount(){
+		this.setState({error:false, message:""})
 		var cookieArray = document.cookie.split("; ");
 			cookieArray.forEach((cookie)=>{
 				cookie = cookie.split("=");
@@ -106,7 +111,7 @@ class LoginComponent extends Component {
     return (
         <>
       <div >
-          <h1 style={{ "font-size": "22px", margin: "30px auto" }}>
+          <h1 style={{ "fontSize": "22px", margin: "30px auto" }}>
             Design a winning CV with us
           </h1>
 

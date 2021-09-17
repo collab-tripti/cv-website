@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import pic from "../assets/pic.png";
-import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
 class FinalResume extends Component {

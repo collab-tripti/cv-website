@@ -14,7 +14,7 @@ class Login extends Component {
           <div class="modal-content">
             <div class="md-head">
               <img src={logo} alt="test" style={{ width: "60px" }} />
-              <h2 style={{ color: "black", "font-size": "25px" }}>
+              <h2 style={{ color: "black", "fontSize": "25px" }}>
                 The Best CV Maker Online.
               </h2>
             </div>
